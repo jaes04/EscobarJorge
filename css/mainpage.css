@@ -5,6 +5,8 @@
 body{
     background-color: #2b2a34;
 }
+<<<<<<< Updated upstream
+=======
 a{
     text-decoration: none;
     list-style: none;
@@ -47,7 +49,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 .menu {
 	background: #1d1d1d;
 	height: 8.5%;
@@ -62,9 +63,6 @@ body {
 	border-radius: 10%;
     padding-right: 15%;
 }
-
-
-
 .buscador {
 	background: #2b2b2b;
 	border: solid 1px #525252;
@@ -128,83 +126,116 @@ body {
     list-style: none;
 }
 .foro{
-    display: block;
+    background-color: #333;
     width: 15%;
     height: 3%;
     color: beige;
 }
+.asignature{
+    background-color: #333;
+}
+
 .space{
     margin-left: 2%;
 }
+>>>>>>> Stashed changes
 .topnav{
     overflow: hidden;
-    background-color: #333;
+    background-color: #221f2c;
 }
-.topnav a{
+
+.topnav img{
+    width: 8%;
     float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    margin-top: 10px;
+    padding: 10px 20px;
 }
-.topnav a:hover{
-    background-color: #ddd;
-    color: black;
-}
-.topnav .icon{
-    display: none;
-}
-.eventos{
-    margin-top: 5%;
-    position: fixed;
-    border: solid;
-    background-color: #525252;
-    font-size: 30px;
-    width: 17.5%;
-    border-radius: 40px;
-    right: 20px;
-    text-align: center;
-}
-.eventos a{
-    text-decoration: none;
-    list-style: none;
-}
-.n_evento{
-    color: #3B83BD;
-}
-.comentarios{
+
+.buscador{
     float: right;
-    margin-right: 15%;
-    margin-top: -7%;
-    background-color: #141318;
-    color: beige;
+    margin: 3vw;
+    width: 35%;
+    border-radius: 60px;
+    padding: 13px;
 }
-.arriba{
-    position: fixed;
-    color: white;
-    border: solid;
-    background-color: rgb(82, 4, 155);
-    font-size: 30px;
-    border-radius: 40px;
+
+/*------------POSTS---------------*/
+
+.upost{ /*Estructura General de Post y Comment*/
+    background-color: #4e4c5e;
+    margin-left: 12%;
+    display: inline-block;
+    width: 75%;
+    border-radius: 80px
+}
+
+.pp{ /*CSS QUE EDITA LA PFP DE POST*/
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
     width: 50px;
-    bottom: 20px;
-    right: 20px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 200px;
+    
 }
-.centrar{
-    padding: 0.5em;
+
+.p_username{ /*CSS QUE EDITA EL USERNAME DE POST*/
+    float: left;
+    margin-top: 60px;
+    font-size: 40px;
+    font-size: 25px;
+    color: rgb(190, 199, 226);
+    margin-bottom: 5px;
 }
-.campanita{
-    width: 20%;  
-    background-color: beige;
+
+.post_title{ /*CSS QUE EDITA TITULO DE POST*/
+    font-size: 25px;
+    margin-left: 30px;
+    color: rgb(190, 199, 226);
+    margin-bottom: 5px;
+}
+<<<<<<< Updated upstream
+
+.post_subject{ /*CSS QUE EDITA EL SUBJECT DE POST*/
+    color: rgb(190, 199, 226);
+=======
+.feed{
+    float: left;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: #eee;
+}
+.feed article{
+    display: grid;
+    width: 100%;
+    background-color: #4e4c5e;
+    border-top-right-radius: 5vw;    
+}
+.pp{
+    width: 2.5%;
+    float: left;
+}
+.p_username{
+    font-size: 1vw;
+    float: left;
+    margin-top: 1%;
+}
+.p_title{
+    font-size: 2.15vw;
+}
+.p_img{
+    width: 100%;
 }
 @media only screen and (max-width: 600px){
     .logousu{
-        margin-left: -20%;
+        margin-left: -15%;
     }
     .buscador{
         width: 20vw;
+        margin-right: 5%;
     }
     #busqueda{
         font-size: xx-small;
@@ -213,10 +244,71 @@ body {
         margin-left: -19.5%;
     }
     .eventos{
-        margin-left: -50%;
+        margin-left: -40%;
         margin-top: 10%;
+        font-size: small;
     }
+    .espacio{
+        margin-right: -10%;
+    }
+    .campanita{
+        width: 40%;
+    }
+    .post{
+        margin-top: 10%;
+        margin-right: 20%;
+    }
+>>>>>>> Stashed changes
 }
+
+.post_body{/*CSS QUE EDITA BODY DE POST*/
+    font-size: 15px;
+    color: rgb(194, 220, 223);
+    display: block;
+} 
+
+.p_img{ /*CSS QUE EDITA IMG DE POST*/
+    width: 45%;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding: 15px;
+    display: block;
+}
+
+.p_pdf{ /*CSS QUE EDITA ACHIVO DE POST*/
+    width: 250px;
+    padding: 60px;
+
+}
+
+
+/*------------COMMENTS---------------*/
+
+.username{ /*CSS QUE EDITA USERNAME DE COMMENT*/
+
+}
+.comment_pp{ /*CSS QUE EDITA PFP DE COMMENT*/
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    margin-right: 3px;
+    border-radius: 200px;
+
+}
+
+.c_body{ /*CSS QUE EDITA BODY DE COMMENT*/
+    
+}
+
+
+.profile_pic{/*CSS QUE CAMBIA LA PFP EN LA BARRA TOPNAV*/
+
+}
+.bar_username{/*CSS QUE CAMBIA USERNAME EN LA BARRA TOPNAV*/
+
+}
+
 @media only screen and (max-width:20000000px) {
     .topnav a{
         display: none;
